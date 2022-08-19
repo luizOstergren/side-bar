@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+    --light-grey: #dce4e3;
+    --text-color: #084236;
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    color: var(--text-color);
+}
+
+main{
+    background-color: var(--body-bg-color);
+    display: flex;
+    width: 100%; 
+    padding: 2rem;
+}
+
+.sidebar{
+    background-color: var(--green);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 15rem;
+}
+
+.sidebar.close{
+   min-width: 6rem;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar.close .menu-open,
+.sidebar.close h3,
+.sidebar.close .avatar {
+    display: none;
+}
+
+.menu-bar span{
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid ;
+    height: 2px;
+    width: 25px;
+    padding-top: 0.2rem;
+}
+
+.side{
+    display: none;
+}
+
+#search{
+    margin: 0rem 2rem;
+    cursor: pointer;
+}
+
+#search{
+    border-radius: 10px;
+    border: none;
+    height: 2rem;
+    width: 12rem;
+    padding-left: 2rem;
+}
+
+.search-widht.close #search{
+    width: 1rem;
+}
+
+.search, .menu-open, .avatar{
+    display: flex;
+    align-items: center;
+}
+
+.search img{
+    position: absolute;
+    left: 2.2rem;
+}
+
+.itens, .menu{
+    display: flex;
+    margin: 1rem 2rem;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.itens:hover{
+    background-color: var(--light-green);
+}
+
+.sidebar.close .itens,
+.sidebar.close .menu{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+}
+
+.sidebar.close .container-footer{
+    display: flex;
+    justify-content: center;
+    padding: 2.3rem 0;
+}
+
+.itens img{
+    padding-right: 0.5rem;
+}
+
+.container-footer{
+    display: flex;
+    padding: 1.5rem;
+    justify-content: space-between;
+    background-color: var(--light-green);
+}
+
+.avatar .text{
+    padding-left: 0.5rem;
+}
